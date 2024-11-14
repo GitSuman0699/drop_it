@@ -21,6 +21,7 @@ dependencies:
   google_fonts: ^6.2.1
   form_builder_validators: ^11.0.0
   flutter_otp_text_field: ^1.2.0
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
@@ -40,5 +41,9 @@ flutter:
     - assets/images/welcome/
     - assets/images/login/
     - assets/images/registration/
+    - assets/images/choose_vehicle/
+    - assets/images/document_upload/
+    - assets/images/client_rating/
+    - assets/images/client_dashboard/
 
 

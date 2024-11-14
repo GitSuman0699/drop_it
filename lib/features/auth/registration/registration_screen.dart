@@ -232,10 +232,12 @@ class CustomFieldWithLabel extends StatelessWidget {
             hintText: hintText,
             prefixIcon: IconButton(
               onPressed: null,
-              icon: Image.asset(
-                icon,
-                height: icon == TImages.phoneIcon ? 15 : 18,
-                width: icon == TImages.phoneIcon ? 15 : 18,
+              icon: SizedBox(
+                child: Image.asset(
+                  icon,
+                  height: icon == TImages.phoneIcon ? 15 : 18,
+                  width: icon == TImages.phoneIcon ? 15 : 18,
+                ),
               ),
               iconSize: 18,
             ),

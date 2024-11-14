@@ -1,6 +1,11 @@
 import 'package:drop_it/features/auth/login/login_screen.dart';
 import 'package:drop_it/features/auth/otp/otp_screen.dart';
 import 'package:drop_it/features/auth/registration/registration_screen.dart';
+import 'package:drop_it/features/choose_vehicle.dart/choose_vehicle_screen.dart';
+import 'package:drop_it/features/client_dashboard/client_dashboard_screen.dart';
+import 'package:drop_it/features/client_rating/client_rating_screen.dart';
+import 'package:drop_it/features/delivery_otp/delivery_otp_screen.dart';
+import 'package:drop_it/features/document_upload/document_upload_screen.dart';
 import 'package:drop_it/features/splash/splash_screen.dart';
 import 'package:drop_it/features/welcome/welcome_screen.dart';
 import 'package:drop_it/routes/app_routes.dart';
@@ -50,6 +55,51 @@ abstract class AppPages {
     GetPage(
       name: AppRoutes.registrationRoute,
       page: () => const RegistrationScreen(),
+      transitionDuration: const Duration(milliseconds: 500),
+      // curve: Curves.easeOut,
+      // transition: Transition.fadeIn,
+    ),
+
+    // Choose Vehicle Screen
+    GetPage(
+      name: AppRoutes.chooseVehicleRoute,
+      page: () => const ChooseVehicleScreen(),
+      transitionDuration: const Duration(milliseconds: 500),
+      // curve: Curves.easeOut,
+      // transition: Transition.fadeIn,
+    ),
+
+    // Document Upload Screen
+    GetPage(
+      name: AppRoutes.documentUploadRoute,
+      page: () => const DocumentUploadScreen(),
+      transitionDuration: const Duration(milliseconds: 500),
+      // curve: Curves.easeOut,
+      // transition: Transition.fadeIn,
+    ),
+
+    // Delivery OTP Screen
+    GetPage(
+      name: AppRoutes.deliveryOtpRoute,
+      page: () => const DeliveryOTPScreen(),
+      transitionDuration: const Duration(milliseconds: 500),
+      // curve: Curves.easeOut,
+      // transition: Transition.fadeIn,
+    ),
+
+    // Client Rating Screen
+    GetPage(
+      name: AppRoutes.clientRatingRoute,
+      page: () => const ClientRatingScreen(),
+      transitionDuration: const Duration(milliseconds: 500),
+      // curve: Curves.easeOut,
+      // transition: Transition.fadeIn,
+    ),
+
+    // Client Dashboard Screen
+    GetPage(
+      name: AppRoutes.clientDashboardRoute,
+      page: () => const ClientDashboardScreen(),
       transitionDuration: const Duration(milliseconds: 500),
       // curve: Curves.easeOut,
       // transition: Transition.fadeIn,

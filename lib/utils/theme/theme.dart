@@ -4,6 +4,7 @@ import 'package:drop_it/utils/theme/widget_themes/checkbox_theme.dart';
 import 'package:drop_it/utils/theme/widget_themes/chip_theme.dart';
 import 'package:drop_it/utils/theme/widget_themes/elevated_button_theme.dart';
 import 'package:drop_it/utils/theme/widget_themes/outlined_button_theme.dart';
+import 'package:drop_it/utils/theme/widget_themes/text_button_theme.dart';
 import 'package:drop_it/utils/theme/widget_themes/text_field_theme.dart';
 import 'package:drop_it/utils/theme/widget_themes/text_theme.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +30,7 @@ class TAppTheme {
     bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
+    textButtonTheme: TTextButtonTheme.lightTextButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
   );
 
@@ -48,6 +50,7 @@ class TAppTheme {
     bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
+    textButtonTheme: TTextButtonTheme.darkTextButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
   );
 }
