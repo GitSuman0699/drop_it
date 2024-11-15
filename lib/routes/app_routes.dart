@@ -26,6 +26,12 @@ abstract class AppRoutes {
   // Client Rating Screen
   static const clientRatingRoute = '/clientRatingScreen';
 
-  // Client Dashboard Screen
+  // Driver Dashboard Screen
   static const clientDashboardRoute = '/clientDashboardScreen';
+
+  // Pickup Request Screen
+  static const pickupRequestRoute = '/pickupRequestScreen';
+
+  // Accept Request Screen
+  static const acceptRequestRoute = '/acceptRequestScreen';
 }

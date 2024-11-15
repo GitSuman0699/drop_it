@@ -1,11 +1,13 @@
+import 'package:drop_it/features/accept_request/accept_request_screen.dart';
 import 'package:drop_it/features/auth/login/login_screen.dart';
 import 'package:drop_it/features/auth/otp/otp_screen.dart';
 import 'package:drop_it/features/auth/registration/registration_screen.dart';
 import 'package:drop_it/features/choose_vehicle.dart/choose_vehicle_screen.dart';
-import 'package:drop_it/features/client_dashboard/client_dashboard_screen.dart';
+import 'package:drop_it/features/driver_dashboard/driver_dashboard_screen.dart';
 import 'package:drop_it/features/client_rating/client_rating_screen.dart';
 import 'package:drop_it/features/delivery_otp/delivery_otp_screen.dart';
 import 'package:drop_it/features/document_upload/document_upload_screen.dart';
+import 'package:drop_it/features/pickup_request/pickup_request_screen.dart';
 import 'package:drop_it/features/splash/splash_screen.dart';
 import 'package:drop_it/features/welcome/welcome_screen.dart';
 import 'package:drop_it/routes/app_routes.dart';
@@ -96,10 +98,28 @@ abstract class AppPages {
       // transition: Transition.fadeIn,
     ),
 
-    // Client Dashboard Screen
+    // Driver Dashboard Screen
     GetPage(
       name: AppRoutes.clientDashboardRoute,
-      page: () => const ClientDashboardScreen(),
+      page: () => const DriverDashboardScreen(),
+      transitionDuration: const Duration(milliseconds: 500),
+      // curve: Curves.easeOut,
+      // transition: Transition.fadeIn,
+    ),
+
+    // Pickup Request Screen
+    GetPage(
+      name: AppRoutes.pickupRequestRoute,
+      page: () => const PickupRequestScreen(),
+      transitionDuration: const Duration(milliseconds: 500),
+      // curve: Curves.easeOut,
+      // transition: Transition.fadeIn,
+    ),
+
+    // Accept Request Screen
+    GetPage(
+      name: AppRoutes.acceptRequestRoute,
+      page: () => const AcceptRequestScreen(),
       transitionDuration: const Duration(milliseconds: 500),
       // curve: Curves.easeOut,
       // transition: Transition.fadeIn,

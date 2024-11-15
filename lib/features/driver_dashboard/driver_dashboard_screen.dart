@@ -1,4 +1,5 @@
 import 'package:drop_it/features/driver_side_menu/driver_side_menu_screen.dart';
+import 'package:drop_it/routes/app_routes.dart';
 import 'package:drop_it/utils/constants/colors.dart';
 import 'package:drop_it/utils/constants/image_strings.dart';
 import 'package:drop_it/utils/constants/spacer_helper.dart';
@@ -6,14 +7,14 @@ import 'package:drop_it/utils/theme/widget_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ClientDashboardScreen extends StatefulWidget {
-  const ClientDashboardScreen({super.key});
+class DriverDashboardScreen extends StatefulWidget {
+  const DriverDashboardScreen({super.key});
 
   @override
-  ClientDashboardScreenState createState() => ClientDashboardScreenState();
+  DriverDashboardScreenState createState() => DriverDashboardScreenState();
 }
 
-class ClientDashboardScreenState extends State<ClientDashboardScreen> {
+class DriverDashboardScreenState extends State<DriverDashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +26,7 @@ class ClientDashboardScreenState extends State<ClientDashboardScreen> {
           // Map view placeholder (replace this with actual map widget in real app)
           Positioned.fill(
             child: Image.asset(
-              TImages.clientDashboardMap1, // Replace with your map image asset
+              TImages.driverDashboardMap1, // Replace with your map image asset
               fit: BoxFit.cover,
             ),
           ),
@@ -116,7 +117,7 @@ class ClientDashboardScreenState extends State<ClientDashboardScreen> {
             left: 130,
             child: TextButton.icon(
               onPressed: () {
-                // Go online or offline functionality
+                Get.toNamed(AppRoutes.pickupRequestRoute);
               },
               icon: const Icon(
                 Icons.power_settings_new,
@@ -178,16 +179,25 @@ class ClientDashboardScreenState extends State<ClientDashboardScreen> {
             ),
           ),
           Positioned(
-            bottom: 140,
+            bottom: 145,
             right: 16,
-            child: FloatingActionButton(
-              mini: true,
-              onPressed: () {
-                // Center map on user location
-              },
-              backgroundColor: Colors.white,
-              child: const Icon(
-                Icons.my_location,
+            child: Container(
+              height: 40,
+              width: 40,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    blurRadius: 6,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              child: IconButton(
+                icon: const Icon(Icons.my_location),
+                onPressed: () {},
                 color: Colors.black87,
               ),
             ),

@@ -36,7 +36,6 @@ flutter:
 
   assets:
     - assets/
-    - assets/images/onboarding/
     - assets/images/splash/
     - assets/images/welcome/
     - assets/images/login/
@@ -44,6 +43,7 @@ flutter:
     - assets/images/choose_vehicle/
     - assets/images/document_upload/
     - assets/images/client_rating/
-    - assets/images/client_dashboard/
+    - assets/images/driver_dashboard/
+    - assets/images/pickup_request/
 
 

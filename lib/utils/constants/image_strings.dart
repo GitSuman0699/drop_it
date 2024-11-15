@@ -47,27 +47,32 @@ class TImages {
   static const String clientImage =
       'assets/images/client_rating/client_image.png';
 
-  // -- Client Dashboard Screen Images
-  static const String clientDashboardMap1 =
-      'assets/images/client_dashboard/map_view1.png';
+  // -- Driver Dashboard Screen Images
+  static const String driverDashboardMap1 =
+      'assets/images/driver_dashboard/map_view1.png';
   static const String driverNavigationArrow =
-      'assets/images/client_dashboard/driver_navigation_arrow.png';
+      'assets/images/driver_dashboard/driver_navigation_arrow.png';
   static const String dashboardMenu =
-      'assets/images/client_dashboard/dashboard_menu.png';
+      'assets/images/driver_dashboard/dashboard_menu.png';
   static const String drawerCloseIcon =
-      'assets/images/client_dashboard/close_icon.png';
+      'assets/images/driver_dashboard/close_icon.png';
   static const String drawernotificationIcon =
-      'assets/images/client_dashboard/notification_icon.png';
+      'assets/images/driver_dashboard/notification_icon.png';
   static const String driverProfilePicture =
-      'assets/images/client_dashboard/driver_profile_picture.png';
+      'assets/images/driver_dashboard/driver_profile_picture.png';
   static const String drawerProfileIcon =
-      'assets/images/client_dashboard/profile_icon.png';
+      'assets/images/driver_dashboard/profile_icon.png';
   static const String drawerPastOrderIcon =
-      'assets/images/client_dashboard/past_order_icon.png';
+      'assets/images/driver_dashboard/past_order_icon.png';
   static const String drawerSupportIcon =
-      'assets/images/client_dashboard/support_icon.png';
+      'assets/images/driver_dashboard/support_icon.png';
   static const String drawerTermsAndConditionsIcon =
-      'assets/images/client_dashboard/terms&conditions_icon.png';
+      'assets/images/driver_dashboard/terms&conditions_icon.png';
   static const String drawerlogoutIcon =
-      'assets/images/client_dashboard/logout_icon.png';
+      'assets/images/driver_dashboard/logout_icon.png';
+
+  // -- Pickup Request Screen Images
+  static const String pickupIcon =
+      'assets/images/pickup_request/pickup_icon.png';
+  static const String dropIcon = 'assets/images/pickup_request/drop_icon.png';
 }
